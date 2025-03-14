@@ -66,7 +66,7 @@ Output: a histogram of log inter burst event intervals saved as a log_IBeIH.png 
 1. Run the Step3_NetworkburstDetection.py script on the parent InputFolder
 ```
 $ python Step3_NetworkburstDetection.py path_to_InputFolder
-
+```
 ### Example output:
 ![W2_D6_log_IBeIH](https://user-images.githubusercontent.com/71605598/130262655-2413706a-e827-4cbd-8b0b-4ff580e25d62.png)
 
