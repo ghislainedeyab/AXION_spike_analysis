@@ -113,7 +113,7 @@ $ python power_spectrum_mean.py path_to_InputFolder 0.05
 
 
 ## Clustering analysis
-### Uses excel file with average parameters from all wells in a given plate. Input file must be a csv sheet with similar format to Extracted-Parameters.xlsx. The extracted parameters columns can be change to reflect parameters of interest. Average parameters can be extracted from generated from Axion Biosystems NeuralMetric Tool. 
+Uses excel file with average parameters from all wells in a given plate. Input file must be a csv sheet with similar format to Extracted-Parameters.xlsx. The extracted parameters columns can be change to reflect parameters of interest. Average parameters can be extracted from generated from Axion Biosystems NeuralMetric Tool. 
 
 
 ### Hierarchical clustering
@@ -134,7 +134,7 @@ $ python hierarchical.py Extracted-Parameters.xlsx
 
 #### Output:
 The plot will be saved in the cloned directory under hierarchical.png
-![Example heatmap from Extracted-Parameters](/Users/ghislainedeyab/Desktop/Github/AXION_spike_analysis/Git_heatmap.png)
+![Example heatmap from Extracted-Parameters](Git_heatmap.png)
 
 
 
