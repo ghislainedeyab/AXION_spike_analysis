@@ -136,7 +136,7 @@ $ python hierarchical.py Extracted-Parameters.xlsx
 
 #### Output:
 The plot will be saved in the cloned directory under hierarchical.png
-![Example heatmap from Extracted-Parameters](Git_heatmap.png)
+![Example heatmap from Extracted-Parameters](Git_Example_Heatmap.png)
 
 
 
