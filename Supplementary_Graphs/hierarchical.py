@@ -13,10 +13,9 @@ import matplotlib.pyplot  as plt
 inputFile = sys.argv[1]  # first field should be input file path
 
 # hierarchical clustering by plate
-data = pd.read_excel(inputFile, sheet_name="Combined by plate", header=4, index_col=[0,1], skiprows=[5,])
+data = pd.read_excel(inputFile, sheet_name="Example Data", header=4, index_col=[0,1], skiprows=[5,])
 
-data_to_clus = data[['Total spikes', 'MFR', 'Number of bursts', 
-                     'Number of network bursts', 'Synchrony index']]
+data_to_clus = data[['NB duration', 'Burst duration', 'Spikes per burst', 'Spikes per NB' ]]
 
 groups = data.index.get_level_values(0)
 print(groups.unique())
@@ -29,26 +28,7 @@ data_clusterGrid = sns.clustermap(data_to_clus, standard_scale=1, figsize=(12, 1
                                   row_colors=row_colors )
 
 
-# hierarchical clustering by cell line
-data2 = pd.read_excel(inputFile, sheet_name="Combined by line", header=4, index_col=[0,1,2], skiprows=[5,])
-
-data_to_clus2 = data2[['Total spikes', 'MFR', 'Number of bursts', 
-                     'Number of network bursts', 'Synchrony index']]
-
-groups2 = data2.index.get_level_values(0)
-print(groups2.unique())
-lut2 = dict(zip(groups2.unique(), ['firebrick', 'darkorange', 'gold', 'springgreen', 
-                                   'deepskyblue', 'slateblue', 'purple']))
-print(lut2)
-row_colors2 = groups2.map(lut2)
-data_clusterGrid2 = sns.clustermap(data_to_clus2, standard_scale=1, figsize=(12, 10), 
-                                   dendrogram_ratio=(.3, .3), cbar_pos=(0, .05, .03, .3),
-                                   row_colors=row_colors2 )
-
-
-
-
 
 plt.show()
-#data_clusterGrid3.fig.suptitle('Hierarchical clustering of MEA wells')
+#data_clusterGrid3.fig.suptitle('Hierarchical clustering of mutant organoids')
 
