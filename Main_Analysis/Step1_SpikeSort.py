@@ -21,7 +21,7 @@ def spike_sort(inputFile, excluded):
     data = df2.groupby(df2["Electrode"].str[:2]).agg(list)
 
     # create folder for spike info by well
-    outPath = inputFile[:-25] + '_well_list'
+    outPath = inputFile + '_well_list'
     os.mkdir(outPath)
     
     # write csv

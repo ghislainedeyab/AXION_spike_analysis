@@ -1,0 +1,4 @@
+Number of electrode bursts,Number of electrodes,Beginning of network burst (s),End of network burst (s),Network burst duration (s),Average electrode burst duration (s),Number of spikes
+3,3,157.44224,158.4596,1.0173599999999965,0.8049333333333285,161
+4,4,157.68816,158.21672,0.5285599999999988,0.34645999999999333,78
+4,4,563.20264,563.97888,0.7762400000000298,0.5258600000000513,208
