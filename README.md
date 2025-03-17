@@ -22,6 +22,7 @@ Clone the repository:
 $ git clone https://github.com/RhalenaThomas/AXION_spike_analysis.git
 ```
 Example data from data collected on 2 MEA plates can be found in InputFolder
+
 Example of processed data including all output can be found in InputFolder_with_Analysis_Output
 
 ## Data sorting
