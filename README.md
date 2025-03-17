@@ -117,11 +117,15 @@ $ python power_spectrum_mean.py path_to_InputFolder 0.05
 
 
 ### Hierarchical clustering
-Generate 2 hierarchically clustered heatmaps showing how different cell plates or cell lines are clustered based on their electrophysiological activity. Each heat map is generated from the separate excel sheets which splits data by 1. MEA plate and 2. Cell line 
+Generate hierarchically clustered heatmaps showing how different cell plates or cell lines are clustered based on their electrophysiological activity. Heatmaps are generated from custom excel file summarizing data across wells for selected parameters extracted from Axion Biosystems Neural Metric Tool(see Extracted_Parameters.xlsx file as example).
 
-Data is read by default from sheet_name="Combined by plate" for hierarchical clustering by plate, sheet_name="Combined by line" for hierarchical clustering by cell line. 
+Excel sheet name needs to be specified in hierarchical.py script:
+E.x.
+data = pd.read_excel(inputFile, sheet_name="Example Data", header=4, index_col=[0,1], skiprows=[5,])
 
 Column names for chosen parameters need to be specified in the hierarchical.py script
+E.x.
+data_to_clus = data[['NB duration', 'Burst duration', 'Spikes per burst', 'Spikes per NB' ]]
 
 1. From the Supplementary_Graphs folder inside the cloned directory, run the hierarchical.py script with the filepath to the input file as an argument. For example:
 ```
