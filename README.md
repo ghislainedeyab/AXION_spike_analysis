@@ -1,6 +1,6 @@
 # AXION_spike_analysis
 Python workflow to analyse multi electrode array recording from AXION biosystems and create visualization
-Data visualization and analyysis tools for MEA data of 2D and 3D cell cultures
+Data visualization and analysis tools for MEA data of 2D and 3D cell cultures
 
 ## Installation:
 Dependencies:
@@ -78,6 +78,8 @@ $ python Step3_NetworkburstDetection.py path_to_InputFolder
 
 ### Raster plots + histograms of spike count per 1 second bin
 Plots a raster plot of spike train data for every well, along with a histogram of spike counts per 1 second interval. If available, will also plot the burst and network burst information for every well. To get burst and network burst information, run Step2_BurstDetection.py and Step3_NetworkburstDetection.py on data before running Step4_RasterPlot.py
+
+Note: Default x-axis limit is set to 600 seconds (10 minutes). To change x-axis limit go to Step4_RasterPlot.py --> line 123 --> plt.xlim(0,600)
 
 1. To run the Step4_RasterPlot.py script on the InputFolder containing all output from Step1, Step2, and Step3 : 
 ```

@@ -19,7 +19,7 @@ data_to_clus = data[['NB duration', 'Burst duration', 'Spikes per burst', 'Spike
 
 groups = data.index.get_level_values(0)
 print(groups.unique())
-lut = dict(zip(groups.unique(), ['indianred', 'gold', 'limegreen', 
+lut = dict(zip(groups.unique(), ['#E8D793', '#B3EDDA', 'gold', 'limegreen', 
                                  'deepskyblue', 'slateblue', 'violet']))
 print(lut)
 row_colors = groups.map(lut)
