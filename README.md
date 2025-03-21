@@ -88,7 +88,7 @@ $ python Step4_RasterPlot.py path_to_InputFolder
 Here spikes within bursting period are highlighted in blue, and network bursts are outlined producing vertical black lines
 
 #### Example output:
-![Plate1_A1_Raster](Example_Images/A1_spikes_raster_.png)
+![Plate1_A1_Raster](Example_Images/A1_spikes_raster.png)
 
 ## Supplemental Graphs
 
