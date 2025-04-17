@@ -19,7 +19,7 @@ $ conda install seaborn
 ```
 Clone the repository:
 ```
-$ git clone https://github.com/RhalenaThomas/AXION_spike_analysis.git
+$ git clone https://github.com/ghislainedeyab/AXION_spike_analysis.git
 ```
 Example data collected from 2 MEA plates can be found in InputFolder
 
