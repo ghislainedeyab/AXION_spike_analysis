@@ -2,7 +2,7 @@
 Python workflow to analyze and visulaize multi electrode array recording from AXION biosystems. AXION_spike_analysis requires data files exported from AXION biosystems AxIS Navigator software. Exported files required are spike_list.csv files listing all detected spikes across all electrodes. 
 
 ## Hardware requirements 
-This pipeline requires a standard compiuter with enough memory to support operations dependent on user data size.
+This pipeline requires a standard computer with enough memory to support operations dependent on user data size.
 
 ## Installation:
 Dependencies:
