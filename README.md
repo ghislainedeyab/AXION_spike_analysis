@@ -8,6 +8,10 @@ Dependencies:
 - seaborn 0.11.1
 - pandas 1.1.0+
 
+Versions tested:
+python 3.6
+python 3.13.2
+
 To install seaborn:
 ```
 $ pip install seaborn
