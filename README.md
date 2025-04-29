@@ -1,5 +1,5 @@
 # AXION_spike_analysis
-Python workflow to analyse multi electrode array recording from AXION biosystems and create visualization
+Python workflow to analyze multi electrode array recording from AXION biosystems and create visualization
 Data visualization and analysis tools for MEA data of 2D and 3D cell cultures
 
 ## Installation:
