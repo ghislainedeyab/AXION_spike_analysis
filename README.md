@@ -12,7 +12,7 @@ Versions tested:
 python 3.6
 python 3.13.2
 
-To install seaborn:
+To install seaborn (typical install time ~1 minute):
 ```
 $ pip install seaborn
 ```
@@ -25,7 +25,7 @@ Clone the repository:
 ```
 $ git clone https://github.com/ghislainedeyab/AXION_spike_analysis.git
 ```
-Example data collected from 2 MEA plates can be found in InputFolder
+Example data collected from 2 MEA plates can be found in InputFolder and can be used as sample data to run pipeline. Expected run time ~10 minutes.
 
 Example of processed data including all output can be found in InputFolder_with_Analysis_Output
 
